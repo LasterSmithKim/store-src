@@ -70,7 +70,7 @@
 
                             <tr>
                                 <td align="right" bgcolor="#ffffff">电话： </td>
-                                <td align="left" bgcolor="#ffffff"><input name="address" type="text" class="inputBg" v-model="orderInfo.singer_mobile" size="25"></td>
+                                <td align="left" bgcolor="#ffffff"><input name="address" type="text" class="inputBg" v-model="orderInfo.signer_mobile" size="25"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -139,7 +139,7 @@
                     this.orderInfo = response.data;
                     var totalPrice = 0
                     response.data.goods.forEach(function(entry) {
-                      totalPrice += entry.goods_num*entry.goods.shop_price
+                      totalPrice += entry.goods_sum*entry.goods.shop_price
                     });
                     this.totalPrice = totalPrice
 
