@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-let host = 'https://api.smithkim.com'
 
+let host = 'https://api.smithkim.com';
 
 //获取商品类别信息
 export const queryCategorygoods = params => { return axios.get(`${host}/indexgoods/`) }
 
 //获取首页中的新品
-// export const newGoods = params => { return axios.get(`${host}/newgoods/`) }
+export const newGoods = params => { return axios.get(`${host}/newgoods/`) }
 
 //获取轮播图
 export const bannerGoods = params => { return axios.get(`${host}/banners/`) }
@@ -44,7 +44,6 @@ export const deleteShopCart = goodsId => { return axios.delete(`${host}/shopcart
 //收藏
 export const addFav = params => { return axios.post(`${host}/userfavs/`, params) }
 
-
 //取消收藏
 export const delFav = goodsId => { return axios.delete(`${host}/userfavs/`+goodsId+'/') }
 
@@ -54,7 +53,8 @@ export const getAllFavs = () => { return axios.get(`${host}/userfavs/`) }
 export const getFav = goodsId => { return axios.get(`${host}/userfavs/`+goodsId+'/') }
 
 //登录
-export const login = params => { return axios.post(`${host}/login/`, params)
+export const login = params => {
+  return axios.post(`${host}/login/`, params)
 }
 
 //注册

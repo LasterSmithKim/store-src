@@ -34,6 +34,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper /* { default global options } */)
 
+
 //创建全局实例
 new Vue({
     el:'#app',
@@ -44,3 +45,4 @@ new Vue({
 })
 
 
+//dfadsfas
