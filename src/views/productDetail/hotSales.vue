@@ -6,7 +6,7 @@
     <div class="hot_box">
         <ul>
             <li v-for="item in hotProduct">
-              <router-link :to="'/app/home/productDetail/'+item.id">
+              <router-link :to="'/app/home/productDetail/'+item.id"  target = _blank>
                 <img width="194px" height="194px" :src="item.goods_front_image">
                 <p>{{item.goods_brief}}</p>
                 <p class="hot_price">￥{{item.shop_price}}元</p>

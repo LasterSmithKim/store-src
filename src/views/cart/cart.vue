@@ -2,7 +2,7 @@
   <div id="main">
     <div class="top-next cle">
       <div class="fr"> <a class="graybtn" @click="continueShopping">继续购物</a>
-        <a  class="btn" id="checkout-top" @click="balanceCount">&nbsp;去结算&nbsp;</a> </div>
+        <a  class="btn" id="checkout-top" @click="balanceCount">&nbsp;去结算了&nbsp;</a> </div>
     </div>
     <div class="cart-box" id="cart-box">
       <div class="hd"> <span class="no2" id="itemsnum-top">{{goods.goods_list.length}}件商品</span>
@@ -243,7 +243,7 @@
                 post_script:this.post_script,
                 address:this.address,
                 signer_name:this.signer_name,
-                singer_mobile:this.signer_mobile,
+                signer_mobile:this.signer_mobile,
                 order_mount:this.totalPrice
               }
             ).then((response)=> {

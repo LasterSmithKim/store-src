@@ -42,8 +42,8 @@
                                     <!-- <a href="" target="_blank" class="f6">{{item.name}}</a> -->
                                 </td>
                                 <td align="center" bgcolor="#ffffff">￥{{item.goods.shop_price}}元</td>
-                                <td align="center" bgcolor="#ffffff">{{item.goods_num}}</td>
-                                <td align="center" bgcolor="#ffffff">￥{{item.goods.shop_price*item.goods_num}}元</td>
+                                <td align="center" bgcolor="#ffffff">{{item.goods_sum}}</td>
+                                <td align="center" bgcolor="#ffffff">￥{{item.goods.shop_price*item.goods_sum}}元</td>
                             </tr>
                             <tr>
                                 <td colspan="8" bgcolor="#ffffff" align="right">
@@ -70,7 +70,7 @@
 
                             <tr>
                                 <td align="right" bgcolor="#ffffff">电话： </td>
-                                <td align="left" bgcolor="#ffffff"><input name="address" type="text" class="inputBg" v-model="orderInfo.singer_mobile" size="25"></td>
+                                <td align="left" bgcolor="#ffffff"><input name="address" type="text" class="inputBg" v-model="orderInfo.signer_mobile" size="25"></td>
                             </tr>
                         </tbody>
                     </table>
